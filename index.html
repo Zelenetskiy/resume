@@ -3,71 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>  Моё Резюме </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+<div class="container">
+<div class="info"> 
+    <img src="imgSmile.jpg" 
+    alt="Место для фото" 
+    class="avatar">
+    <div class="info-text">
+        <h1>Зеленецкий Александр Сергеевич</h1> 
+        <p> <em> <strong> Начинающий</strong> программист <em></p>
+        <p> Я увлекаюсь футболом, ремонтом компьютерной техники и программированием</p>
 
-<table cellspacinng="15">
-<tr>
-<td><img src="imgSmile.jpg" width="200" alt="Место для фото"></td>
-<td> <h1>Зеленецкий Александр Сергеевич</h1> 
-    <p> <em> <strong> Начинающий</strong> программист <em></p>
-    <p> Я увлекаюсь футболом, ремонтом компьютерной техники и программированием</p></td>
-</tr>
-</table>
+        <h4> Мой профиль на GitHub: </h4>
+        <a href="https://github.com/Zelenetskiy" target="_blank"> Zelenetskiy </a>
+    </div>
+</div>
 
-<hr>
+
+<div class="card bg-yellow">
 <h2>Мои контактные данные:</h2>
-<ul>
+<ul class="list">
 <li>Тел.: +7 (952) 629-49-16</li>
 <li>Email: Zelenetskiy.a@gmail.com</li>
-<li> <a href="https://github.com/Zelenetskiy" target="_blank"> GitHub</a> </li>
 </ul>
-<hr>
-<h2> Опыт работы</h2>
-<table border="1">
-       <tr>
-        <td>Организация</td>
-        <td>Должность</td>
-        <td>Год</td>
-    </tr>
-<tr>
-<td>ОБОКПО г.Иркутск</td>
-<td>Полицейский</td>
-<td>2014-2016</td>
-</tr>
-<tr>
-    <td>УВО г.Иркутск</td>
-    <td>Старший инженер</td>
-    <td>2016-2020</td>
-</tr>
-<tr>
-    <td>ВСИ г.Иркутск</td>
-    <td>Инженер</td>
-    <td>2020-н.в.</td>
-</tr>
-</table>
-<hr>
-<h2>Мои хобби</h2>
-<ol>
-<li>Футбол</li>
-<li>Программирование</li>
-<li>Ремонт компьютерной техники</li>
-</ol>
+</div>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя">
-    <br>
-    <label for="email">Ваш Email:</label>
-    <input type="email" id="email" placeholder="Введите email">
-    <br>
-    <label for="text">Ваше сообщение:</label>
-    <textarea name="" id="text" cols="15" rows="2"></textarea>
-    <br>
-    <input type="submit" value="Связаться">
-</form>
+
+<div class="card bg-green">
+    <h2> Опыт работы</h2>
+    <table class="table">
+        <tr>
+            <th>Организация</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+    <tr>
+    <td>ОБОКПО г.Иркутск</td>
+    <td>Полицейский</td>
+    <td>2014 - 2016</td>
+    </tr>
+    <tr>
+        <td>УВО г.Иркутск</td>
+        <td>Старший инженер</td>
+        <td>2016 - 2020</td>
+    </tr>
+    <tr>
+        <td>ВСИ г.Иркутск</td>
+        <td>Инженер</td>
+        <td>2020 - н.в.</td>
+    </tr>
+    </table>
+</div>
+
+<div class="card bg-red">
+    <h2>Мои хобби</h2>
+    <ol class="list2">
+        <li>Футбол</li>
+        <li>Программирование</li>
+        <li>Ремонт компьютерной техники</li>
+    </ol>
+</div>
+
+<div class="contact">
+    <h2>Связаться со мной</h2>
+    <form action="/">
+        <div class="row">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea name="" id="text" cols="15" rows="2"></textarea>
+        </div>
+        <input class="btn" type="submit" value="Связаться">
+    </form>
+</div>
+<!-- <div class="box-model">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>          
+</div> -->
+
+
+</div>
+
+<div class="position">
+    <div class="box">
+        
+    </div>
+</div>
+
+<div style="margin-bottom: 500px;"> </div>
 
 </body>
 
